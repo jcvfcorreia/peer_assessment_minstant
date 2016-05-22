@@ -40,7 +40,7 @@
 	<h2>Choose someone to chat with:</h2>
 	<div class="row">
 	{{#each users}}
-	{{> available_user}}
+	 {{> available_user}}
 	{{/each}}
 </div>
 </template>
@@ -91,6 +91,6 @@
 <!-- simple template that displays a message -->
 <template name="chat_message">
   <img src="/{{avatar}}" class="avatar_img">
-	{{user}}: {{text}}
+	{{user}}: {{{parseEmoticons text}}}
 	<br>
 </template>

@@ -1,11 +1,3 @@
-/*Meteor.publish("allUsers", function(){
-  return Meteor.users.find();
-});
-
-Meteor.publish("chats", function(){
-  return Chats.find();
-});*/
-
   Meteor.startup(function () {
     if (!Meteor.users.findOne()){
       for (var i=1;i<9;i++){

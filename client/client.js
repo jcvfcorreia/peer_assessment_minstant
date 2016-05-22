@@ -35,7 +35,7 @@
       this.render("navbar", {to:"header"});
       this.render("chat_page", {to:"main"});
     }else{
-      alert("You must login first!!!");
+      //alert("You must login first!!!");
       Router.go("/");
     }
   });
