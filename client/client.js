@@ -1,5 +1,7 @@
 
   // set up the main template the the router will use to build pages
+  Meteor.subscribe("users");
+  Meteor.subscribe("chats");
   Router.configure({
     layoutTemplate: 'ApplicationLayout'
   });
